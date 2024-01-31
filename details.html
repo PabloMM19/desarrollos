@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalles del Paciente</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Agrega tus propios estilos si es necesario -->
+  <link rel="stylesheet" href="estiloDetalles.css">
+</head>
+
+<body>
+  <div class="parent">
+    <nav class="div1">
+      <ul>
+        <img src="logo1.png" alt="logo" class="logo" width="200px" style="margin-left: 9%;">
+        <!-- Elementos del menú -->
+        <li><a routerLink="/pacientes">Pacientes</a></li>
+        <li><a routerLink="/diagnosticos">Diagnosticos</a></li>
+        <li><a routerLink="/medicaciones">Medicaciones</a></li>
+        <li><a routerLink="/medidas">Medidas</a></li>
+        <li><a routerLink="/progenitores">Progenitores</a></li>
+        <li><a routerLink="/visitas">Visitas</a></li>
+        <li><a routerLink="/calendario">Calendario</a></li>
+        <li><a routerLink="/pruebas">Pruebas</a></li>
+      </ul>
+    </nav>
+
+    <div class="container mt-5 div2">
+      <!-- Información del paciente -->
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="persona1.png" class="img-fluid rounded-start" alt="Foto del Paciente" style="width:70%;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Nombre del Paciente</h5>
+              <p class="card-text"><strong>Código:</strong> ML - MR - 09</p>
+              <!-- Agrega más detalles según tus necesidades -->
+              <p class="card-text"><strong>Edad:</strong> 30 años</p>
+              <p class="card-text"><strong>Enfermedad:</strong> Diabetes</p>
+              <!-- ... (otros detalles) ... -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enlaces a análisis, gráficas, etc. -->
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Análisis Clínicos</h5>
+              <p class="card-text">Información sobre análisis clínicos.</p>
+              <a href="#" class="btn btn-primary">Ver Análisis</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Gráficas de Salud</h5>
+              <p class="card-text">Visualización gráfica de datos de salud.</p>
+              <a href="#" class="btn btn-primary">Ver Gráficas</a>
+            </div>
+          </div>
+        </div>
+        <!-- Agrega más tarjetas según sea necesario -->
+      </div>
+    </div>
+
+    <!-- Botón para volver a la página principal -->
+    <a href="home.html" class="btn btn-secondary mt-3">Volver a la Lista de Pacientes</a>
+  </div>
+
+  <!-- Scripts opcionales de Bootstrap (al final del cuerpo para un mejor rendimiento) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
